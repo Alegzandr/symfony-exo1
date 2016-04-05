@@ -1,0 +1,52 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Ikaruga{% endblock %}
+
+{% block stylesheets %}
+    {% if bg is defined %}
+        {% if bg == 'black' %}
+            <link rel="stylesheet" href="{{ asset('css/black-bg.css') }}">
+        {% endif %}
+    {% endif %}
+{% endblock %}
+
+{% block body %}
+    <h1>Ikaruga</h1>
+    <nav class="navbar-default">
+        <hr>
+        <ol class="breadcrumb">
+            <li><a href="/ikaruga/white">Clair</a></li>
+            <li><a href="/ikaruga/black">Sombre</a></li>
+        </ol>
+        <hr>
+    </nav>
+
+    <div class="responsive-video">
+        <iframe width="560" height="315" src="https://www.youtube.com/embed/XUDd2ZdRlOE" frameborder="0"
+                allowfullscreen></iframe>
+    </div>
+
+    <h3>Zoli tableau</h3>
+    <table class="table table-hover">
+        <tr>
+            <th>Je ne</th>
+            <th>comprends</th>
+            <th>rien à ce jeu</th>
+        </tr>
+        <tr>
+            <td>Je ne</td>
+            <td>comprends</td>
+            <td>rien à ce jeu</td>
+        </tr>
+        <tr>
+            <td>Je ne</td>
+            <td>comprends</td>
+            <td>rien à ce jeu</td>
+        </tr>
+        <tr>
+            <td>Du tout</td>
+            <td>du tout</td>
+            <td>du tout</td>
+        </tr>
+    </table>
+{% endblock %}

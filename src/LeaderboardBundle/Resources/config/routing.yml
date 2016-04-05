@@ -23,3 +23,5 @@ ikaruga:
 ikaruga_bg:
     path:     /ikaruga/{bg}
     defaults: { _controller: LeaderboardBundle:NotPink:ikarugaBg }
+    requirements:
+          bg:   black|white
